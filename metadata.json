@@ -1,0 +1,7 @@
+{
+  "name": "Shriram Digital Library",
+  "description": "A premium study space and digital resource hub providing 24/7 access to high-speed internet, quiet study zones, and modern computer labs.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shriram Digital Library</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1152d4',
+                        secondary: '#ff7d00',
+                        'background-light': '#f6f6f8',
+                        'background-dark': '#101622',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Lexend', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .glass-nav {
+                @apply bg-background-dark/80 backdrop-blur-xl border-b border-white/10;
+            }
+            .glass-card {
+                @apply bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-xl transition-all duration-300;
+            }
+            .hero-pattern {
+                background-image: radial-gradient(circle at 2px 2px, rgba(17, 82, 212, 0.05) 1px, transparent 0);
+                background-size: 32px 32px;
+            }
+        }
+        body {
+            @apply bg-background-dark text-slate-100;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+</head>
+<body class="font-sans">
+    <div id="root"></div>
+</body>
+</html>
