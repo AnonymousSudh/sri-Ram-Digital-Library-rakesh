@@ -1,11 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
-import Home from './pages/Home';
-import Gallery from './pages/Gallery';
-import Membership from './pages/Membership';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Home from './pages/Home.tsx';
+import Gallery from './pages/Gallery.tsx';
+import Membership from './pages/Membership.tsx';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
